@@ -7,7 +7,7 @@ var<storage, read> original_values: array<f32>;
 var<storage, read_write> new_values: array<u32>;
 
 @compute
-@workgroup_size(1)
+@workgroup_size(256)
 fn cast_u8(@builtin(global_invocation_id) global_id: vec3<u32>) {
     let index = 4u * global_id.x;
     let left_byte = u32(original_values[index]) % 256u;

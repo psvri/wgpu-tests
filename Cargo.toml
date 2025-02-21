@@ -1,0 +1,11 @@
+[package]
+name = "wgpu-tests"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+bytemuck = "1"
+env_logger = "0.11.6"
+pollster = "0.4"
+wgpu = "24.0.1"
+flume = "0.11"
